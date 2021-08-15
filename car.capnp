@@ -90,6 +90,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     startupMaster @78;
     startupFuzzyFingerprint @97;
     startupNoFw @104;
+    startupZss @105;
     fcw @79;
     steerSaturated @80;
     belowEngageSpeed @84;
@@ -318,6 +319,7 @@ struct CarControl {
     # range from -1.0 - 1.0
     steer @2: Float32;
     steeringAngleDeg @3: Float32;
+    accel @4: Float32; # m/s^2
   }
 
   struct CruiseControl {
@@ -416,6 +418,7 @@ struct CarParams {
     pid @26 :LateralPIDTuning;
     indi @27 :LateralINDITuning;
     lqr @40 :LateralLQRTuning;
+    model @59 :LateralModelTuning;
   }
 
   steerLimitAlert @28 :Bool;
@@ -498,6 +501,12 @@ struct CarParams {
 
     k @6 :List(Float32);  # LQR gain
     l @7 :List(Float32);  # Kalman gain
+  }
+
+  struct LateralModelTuning {
+    name @0 :Text;
+    multiplier @1 :Float32;
+    useRates @2 :Bool;
   }
 
   enum SafetyModel {
