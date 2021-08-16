@@ -110,7 +110,6 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     wideRoadCameraError @102;
     localizerMalfunction @103;
 
-    # spektor
     manualSteeringRequired @105;
     manualLongitudinalRequired @106;
     silentPedalPressed @107;
