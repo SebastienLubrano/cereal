@@ -109,14 +109,12 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     driverCameraError @101;
     wideRoadCameraError @102;
     localizerMalfunction @103;
-
     manualSteeringRequired @105;
     manualLongitudinalRequired @106;
     silentPedalPressed @107;
     silentButtonEnable @108;
     silentBrakeHold @109;
     silentWrongGear @110;
-
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
