@@ -205,6 +205,7 @@ struct CarState {
   belowLaneChangeSpeed @42 :Bool;
   accEnabled @43 :Bool;
   engineRPM @44 :Float32;
+  readdistancelines @45 :Int16;
 
   # which packets this state came from
   canMonoTimes @12: List(UInt64);
