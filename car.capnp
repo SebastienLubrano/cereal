@@ -74,6 +74,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     stockAeb @64;
     ldw @65;
     carUnrecognized @66;
+    driverMonitorLowAccDEPRECATED @68;
     invalidLkasSetting @69;
     speedTooHigh @70;
     laneChangeBlocked @71;
@@ -104,9 +105,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     driverCameraError @101;
     wideRoadCameraError @102;
     localizerMalfunction @103;
-    driverMonitorLowAccDEPRECATED @68;
-
-    # spektor
+    highCpuUsage @105;
     manualSteeringRequired @106;
     manualLongitudinalRequired @107;
     silentPedalPressed @108;
