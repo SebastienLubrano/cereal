@@ -196,15 +196,15 @@ struct CarState {
   # clutch (manual transmission only)
   clutchPressed @28 :Bool;
 
-  lkasEnabled @37 :Bool;
-  leftBlinkerOn @38 :Bool;
-  rightBlinkerOn @39 :Bool;
-  disengageByBrake @40 :Bool;
-  automaticLaneChange @41 :Bool;
-  belowLaneChangeSpeed @42 :Bool;
-  accEnabled @43 :Bool;
-  engineRPM @44 :Float32;
-  readdistancelines @45 :Int16;
+  lkasEnabled @39 :Bool;
+  leftBlinkerOn @40 :Bool;
+  rightBlinkerOn @41 :Bool;
+  disengageByBrake @42 :Bool;
+  automaticLaneChange @43 :Bool;
+  belowLaneChangeSpeed @44 :Bool;
+  accEnabled @45 :Bool;
+  engineRPM @46 :Float32;
+  readdistancelines @47 :Int16;
 
   # which packets this state came from
   canMonoTimes @12: List(UInt64);
