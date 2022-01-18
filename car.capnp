@@ -86,7 +86,6 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     startupNoControl @77;
     startupMaster @78;
     startupNoFw @104;
-    startupZss @108;
     fcw @79;
     steerSaturated @80;
     belowEngageSpeed @84;
@@ -106,13 +105,14 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     wideRoadCameraError @102;
     localizerMalfunction @103;
     highCpuUsage @105;
-    manualSteeringRequired @106;
-    manualLongitudinalRequired @107;
-    silentPedalPressed @108;
-    silentButtonEnable @109;
-    silentBrakeHold @110;
-    silentWrongGear @111;
-    parkGear @112;
+    cruiseMismatch @106;
+    manualSteeringRequired @107;
+    manualLongitudinalRequired @108;
+    silentPedalPressed @109;
+    silentButtonEnable @110;
+    silentBrakeHold @111;
+    silentWrongGear @112;
+    parkGear @113;
 
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
